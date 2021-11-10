@@ -210,22 +210,26 @@ class DataEtexController extends Controller
 
 
    public function getScenesVisit() {
-      $listScenes = Scene::all();
+      //$listScenes = Scene::all();
+      $listScenes = Scene::with('user')->get();
       return response()->json(['status' => 'ok', 'data' => $listScenes]);
    }
 
    public function getEventClicks() {
-      $listClicks = EventClick::all();
+      //$listClicks = EventClick::all();
+      $listClicks = EventClick::with('user')->get();
       return response()->json(['status' => 'ok', 'data' => $listClicks]);
    }
 
    public function getWalls() {
-      $listWalls = Wall::all();
+      //$listWalls = Wall::all();
+      $listWalls = Wall::with('user')->get();
       return response()->json(['status' => 'ok', 'data' => $listWalls]);
    }
 
    public function getTypeWalls() {
-      $listTypeWalls = TypeWall::all();
+      //$listTypeWalls = TypeWall::all();
+      $listTypeWalls = TypeWall::with('user')->get();
       return response()->json(['status' => 'ok', 'data' => $listTypeWalls]);
    }
 

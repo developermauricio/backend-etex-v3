@@ -90,7 +90,8 @@ class UserInfoController extends Controller
     }
     
     public function getUserLogin() { 
-        $listUsers = LoginUser::all(); 
+        //$listUsers = LoginUser::all(); 
+        $listUsers = LoginUser::with('user')->get();
         return response()->json(["status" => "ok", "data" => $listUsers]);  
     }
 }

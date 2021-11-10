@@ -18,7 +18,10 @@ class DatabaseSeeder extends Seeder
             'lastRegisteredIDSync',
             'lastLoggedIDSync',
             'lastScenesVisitIDSync',
-            'lastClickEventsIDSync'
+            'lastClicksIDSync',
+            'lastWallIDSync',
+            'lastTypeWallIDSync',
+            'lastFilesIDSync'
         ];
 
         foreach ($listVars as $var ) {

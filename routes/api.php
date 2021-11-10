@@ -43,6 +43,7 @@ Route::post('/register-wall', [DataEtexController::class, 'registerWall']);
 Route::post('/register-type-wall', [DataEtexController::class, 'registerTypeWall']);
 Route::post('/register-file', [DataEtexController::class, 'registerFile']);
 
+/***  get data scenes, walls and files  ***/
 Route::get('/get-list-scenes', [DataEtexController::class, 'getScenesVisit']);
 Route::get('/get-list-cliks', [DataEtexController::class, 'getEventClicks']);
 Route::get('/get-list-walls', [DataEtexController::class, 'getWalls']);
