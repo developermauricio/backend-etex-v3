@@ -42,13 +42,16 @@ Route::post('/register-click', [DataEtexController::class, 'registerClick']);
 Route::post('/register-wall', [DataEtexController::class, 'registerWall']);
 Route::post('/register-type-wall', [DataEtexController::class, 'registerTypeWall']);
 Route::post('/register-file', [DataEtexController::class, 'registerFile']);
+Route::post('/register-file-model', [DataEtexController::class, 'registerFileModel']);
 
 /***  get data scenes, walls and files  ***/
 Route::get('/get-list-scenes', [DataEtexController::class, 'getScenesVisit']);
 Route::get('/get-list-cliks', [DataEtexController::class, 'getEventClicks']);
 Route::get('/get-list-walls', [DataEtexController::class, 'getWalls']);
 Route::get('/get-list-type-walls', [DataEtexController::class, 'getTypeWalls']);
+Route::get('/get-list-files', [DataEtexController::class, 'getFiles']);
+Route::get('/get-list-files-model', [DataEtexController::class, 'getFilesModel']);
 
-Route::get('/register-var', [DataEtexController::class, 'registerVariable']);
-Route::get('/update-var', [DataEtexController::class, 'updateVariable']);
-Route::get('/get-var', [DataEtexController::class, 'getVariable']);
+Route::get('/register-var', [DataEtexController::class, 'registerVar']);
+Route::get('/update-var', [DataEtexController::class, 'updateVar']);
+Route::get('/get-var', [DataEtexController::class, 'getVar']);

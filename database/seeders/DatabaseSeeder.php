@@ -21,7 +21,8 @@ class DatabaseSeeder extends Seeder
             'lastClicksIDSync',
             'lastWallIDSync',
             'lastTypeWallIDSync',
-            'lastFilesIDSync'
+            'lastFilesIDSync',
+            'lastFilesModelIDSync'
         ];
 
         foreach ($listVars as $var ) {

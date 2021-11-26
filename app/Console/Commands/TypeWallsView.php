@@ -14,7 +14,7 @@ class TypeWallsView extends Command
      *
      * @var string
      */
-    protected $signature = 'sync:wallsview';
+    protected $signature = 'sync:typewalls';
 
     /**
      * The console command description.
