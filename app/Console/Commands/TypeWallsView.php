@@ -77,7 +77,7 @@ class TypeWallsView extends Command
         
         $googleSheet->saveDataToSheet(
             $finalData->toArray(),
-            '1qnL6PpX5XvLUy8hOHFtRBB2cxikF3noc8ER8zKDa2hg',
+            '1ofUG4QheLz_VRrgpV-O-B6ozTjKqw4WMiJsej9XImOQ',
             'type_walls',
         );
 

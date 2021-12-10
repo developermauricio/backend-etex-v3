@@ -76,7 +76,7 @@ class EventsClick extends Command
                
         $googleSheet->saveDataToSheet(
             $finalData->toArray(),
-            '1oPLqTO50gp6SqBpMXkzSfRfSuQBFdYgarvdRkOyXc0U',
+            '1IZWGMCTKgZhnsgtxusdkn6p7At0-0IJzQm3miVVjpTc',
             'clicks',
         );
 

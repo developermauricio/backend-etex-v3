@@ -385,7 +385,14 @@ class DataEtexController extends Controller
    }
 
    public function updateVar() {
-      $variable = Variable::where( 'name', 'lastFilesModelIDSync' )->first();         
+      //$variable = Variable::where( 'name', 'lastRegisteredIDSync' )->first();         
+      //$variable = Variable::where( 'name', 'lastLoggedIDSync' )->first();         
+      //$variable = Variable::where( 'name', 'lastClicksIDSync' )->first();         
+      //$variable = Variable::where( 'name', 'lastFilesModelIDSync' )->first();         
+      //$variable = Variable::where( 'name', 'lastFilesIDSync' )->first();         
+      //$variable = Variable::where( 'name', 'lastScenesVisitIDSync' )->first();         
+      //$variable = Variable::where( 'name', 'lastTypeWallIDSync' )->first();         
+      $variable = Variable::where( 'name', 'lastWallIDSync' )->first();         
       $variable->value = 0;
       $variable->save();
 

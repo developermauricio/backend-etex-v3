@@ -74,9 +74,14 @@ class RegisterUser extends Command
 
         $googleSheet->saveDataToSheet(
             $finalData->toArray(),
-            '1h4VxxlmAHxQo_sW1D2bEfHVUR0gjk7NGP4B6TZPb9Gw',
+            '1dwiEaSUcZORS4C_nSKYhgvHcP_M_j9NGD0PNXkSiEME',
             'register',
         );
+        /* $googleSheet->saveDataToSheet(
+            $finalData->toArray(),
+            '1h4VxxlmAHxQo_sW1D2bEfHVUR0gjk7NGP4B6TZPb9Gw',
+            'register',
+        ); */
 
         $variable->value = $lastId;
         $variable->save();
