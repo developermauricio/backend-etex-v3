@@ -57,7 +57,9 @@ class FilesWalls extends Command
         $finalData = collect();
         $lastId = 0;
 
-        foreach ($rows as $row){            
+        foreach ($rows as $row){    
+            $typeF = $row->type_wall ? $row->type_wall : 'Indefinido';
+            
             $finalData->push([
                 $row->id,
                 $row->user->email,
@@ -67,7 +69,7 @@ class FilesWalls extends Command
                 $row->user->phone,
                 $row->name_scene,
                 $row->name_wall,
-                $row->type_wall,
+                $typeF,
                 $row->name_file,
                 $row->date_register,
                 $row->created_at,
